@@ -1,0 +1,232 @@
+/*CSS*/
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#ppal {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    height: 100vh;
+    background-color: rgba(255, 179, 27, 0.887);
+
+}
+
+header {
+    grid-area: header;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+main {
+    grid-area: main;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px 20px 60px 20px;
+}
+
+.main-recomendados {
+    display: flex;
+}
+
+@media only screen and (max-width:576px) {
+    #ppal {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "header"
+            "main"
+            "footer";
+
+    }
+
+    .carousel-index {
+        flex-direction: column;
+    }
+
+    .main-recomendados {
+        grid-area: main;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    color: rgb(62, 54, 54);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bolder;
+    color: rgb(62, 54, 54);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: left;
+    color: rgb(92, 77, 77);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-contacto {
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+#navbarNavAltMarkup {
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
+
+.carousel-inner {
+    padding: 5px 5px 5px 5px;
+}
+
+.carousel-index {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo-carousel {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+
+.carousel-inicio {
+    background: rgba(102, 76, 76, 0.21);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(102, 76, 76, 0.1);
+}
+
+.card-title {
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.card-subtitle {
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.card-text {
+    text-align: justify;
+    font-weight: lighter;
+    color: rgb(62, 54, 54);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.presentacion-gonzalez {
+    width: 30%;
+    border-radius: 5%;
+}
+
+.presentacion-perez {
+    width: 30%;
+    border-radius: 5%;
+}
+
+.presentacion-rodriguez {
+    width: 30%;
+    border-radius: 5%;
+}
+
+.paragraph-one {
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(44, 37, 37);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.paragraph-two {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(44, 37, 37);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 32px;
+}
+
+.paragraph-three {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(44, 37, 37);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 32px;
+}
+
+.paragraph-four {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.enlace-contacto {
+    list-style-type: none;
+}
+
+.enlace-ubicacion {
+    list-style-type: none;
+}
+
+iframe {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: beige;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
