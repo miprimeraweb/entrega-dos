@@ -1,0 +1,64 @@
+@media only screen and (max-width:576px) {
+    #ppal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header"
+            "main"
+            "footer";
+        background-image: url(../img/vista-superior-tazon-lentejas-variedad-condimentos.jpg);
+        background-attachment: fixed;
+    }
+
+    #ppal-pages-sobre-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header"
+            "main"
+            "footer";
+        height: 100vh;
+        background-image: url(../img/vista-superior-tazon-lentejas-dos.png);
+        background-attachment: fixed;
+    }
+
+    .titulo-home {
+        font-size: 60px;
+        padding-left: 900px;
+        padding-top: 120px;
+        padding-bottom: 0px;
+        justify-content: left;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+
+    .btn-home {
+        display: flex;
+        justify-content: right;
+        padding-right: 160px;
+        padding-top: 0px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+    }
+
+    .carousel-index {
+        flex-direction: column;
+    }
+
+    .main-recomendados {
+        grid-area: main;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-destacados {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .paragraph-two {
+        flex-direction: column;   
+    }
+}
