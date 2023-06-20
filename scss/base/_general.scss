@@ -17,7 +17,7 @@ font-family: 'Ubuntu', sans-serif;*/
         "main main main"
         "footer footer footer";
     height: 100vh;
-    background-image: url(../img/comida-ingredientes.jpg);
+    background-image: url(../img/comida-ingredientes.png);
     background-size: cover;
 }
 
@@ -76,17 +76,17 @@ h1 {
     padding-bottom: 45px;
     margin: 20px 20px 20px 20px;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: $blanco;
     opacity: 100%;
 }
 
 h2 {
     text-align: left;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
-    font-family: 'Ubuntu', sans-serif;
+    color: $blanco;
+    font-family: $fuente-primaria;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -94,8 +94,8 @@ h2 {
 
 h3 {
     text-align: left;
-    color: rgb(255, 255, 255);
-    font-family: 'Ubuntu', sans-serif;
+    color: $blanco;
+    font-family: $fuente-primaria;
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -111,10 +111,10 @@ h3 {
     padding-bottom: 45px;
     margin: 20px 20px 20px 20px;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-weight: lighter;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: $blanco;
 }
 
 
@@ -123,9 +123,9 @@ h3 {
     padding-left: 900px;
     padding-top: 120px;
     padding-bottom: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-weight: lighter;
-    color: rgb(255, 255, 255);
+    color: $blanco;
 }
 
 .subtitulo-home {
@@ -136,11 +136,11 @@ h3 {
     padding-bottom: 10px;
     margin-right: 10px;
     margin-left: 900px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     text-align: center;
     font-weight: lighter;
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: $blanco;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -153,7 +153,7 @@ h3 {
     justify-content: right;
     padding-right: 160px;
     padding-top: 10px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-weight: bold;
 }
 
@@ -162,15 +162,8 @@ h3 {
     padding-left: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
-    color: rgb(255, 255, 255);
+    color: $blanco;
     font-style: italic;
-}
-
-#navbarNavAltMarkup {
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    font-size: 16px;
 }
 
 
@@ -186,7 +179,7 @@ h3 {
 .subtitulo-carousel {
     text-align: center;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuente-secundaria;
     font-weight: bolder;
     padding: 0;
     margin: 0;
@@ -204,7 +197,7 @@ h3 {
 
 .card-title {
     text-align: left;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-size: 20px;
     font-weight: bolder;
     letter-spacing: 5px;
@@ -212,20 +205,20 @@ h3 {
 
 .enlaces-card {
     text-align: left;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-size: 15px;
     font-style: italic;
     font-weight: bolder;
-    color: rgb(204, 153, 0);
+    color: $mostaza-enlaces;
 }
 
 .enlaces-card:hover {
     text-align: left;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-size: 15px;
     font-style: italic;
     font-weight: bolder;
-    color: rgb(255, 102, 51);
+    color: $rosa-enlaces;
 }
 
 
@@ -234,7 +227,7 @@ h3 {
     text-align: justify;
     font-weight: lighter;
     color: rgb(62, 54, 54);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-size: 15px;
 }
 
@@ -248,7 +241,7 @@ h3 {
 /* SECCION SOBRE NOSOTROS */
 
 .presentacion-sobre-nosotros {
-    color: rgb(255, 255, 255);
+    color: $blanco;
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px 20px;
     background: rgba(147, 136, 136, 0.21);
@@ -278,58 +271,59 @@ h3 {
 }
 
 .enlace-uno {
-    color: rgb(204, 153, 0);
-    font-family: 'Ubuntu', sans-serif;
+    color: $mostaza-enlaces;
+    font-family: $fuente-primaria;
     font-size: 18px;
     text-decoration: dotted;
     font-weight: bold;
+    padding: 5px 5px 5px 5px;
 }
 
 .enlace-dos {
-    color: rgb(204, 153, 0);
-    font-family: 'Ubuntu', sans-serif;
+    color: $mostaza-enlaces;
+    font-family: $fuente-primaria;
     font-size: 18px;
     text-decoration: dotted;
     font-weight: bold;
 }
 
 .enlace-dos:hover {
-    color: rgb(255, 102, 51);
+    color: $rosa-enlaces;
 }
 
 
 .enlace-uno:hover {
-    color: rgb(255, 102, 51);
+    color: $rosa-enlaces;
 }
 
 ol {
-    color: rgb(204, 153, 0);
+    color: $mostaza-enlaces;
     font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $fuente-primaria;
     font-size: 18px;
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px 20px;
 }
 
 li:hover {
-    color: rgb(255, 102, 51);
+    color: $rosa-enlaces;
 }
 
 #enlace-tres {
-    color: rgb(255, 255, 255);
-    font-family: 'Ubuntu', sans-serif;
+    color: $blanco;
+    font-family: $fuente-primaria;
     font-size: 15px;
     text-decoration: dotted;
     font-weight: bold;
 }
 
 #enlace-tres:hover {
-    color: rgb(255, 102, 51);
+    color: $rosa-enlaces;
 }
 
 
 #enlace-tres:hover {
-    color: rgb(255, 102, 51);
+    color: $rosa-enlaces;
 }
 
 #presentacion-gonzalez {
@@ -348,8 +342,8 @@ li:hover {
 }
 
 .paragraph-two {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: $fuente-secundaria;
+    color: $blanco;
     font-weight: bold;
     font-size: 15px;
     display: flex;
@@ -362,8 +356,8 @@ li:hover {
 }
 
 .paragraph-three {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: $fuente-secundaria;
+    color: $blanco;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -392,14 +386,25 @@ iframe {
     margin: auto;
 }
 
-footer {
-    grid-area: footer;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: small;
-    font-weight: lighter;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+.btn{
+    background-color: $rosa-enlaces;
+    border-color: $rosa-enlaces;
+    margin-left: 70px;
+} 
+
+.btn:hover {
+    background-color: $blanco;
+    border-color: $rosa-enlaces;
+}
+
+.enlace-dos-home{
+    color: $blanco;
+    font-family: $fuente-primaria;
+    font-size: 18px;
+    text-decoration: dotted;
+    font-weight: bold;
+}
+
+.enlace-dos-home:hover {
+    color:$rosa-enlaces; 
 }

@@ -1,0 +1,26 @@
+.formulario {
+    justify-content: center;
+    align-items: left;
+}
+
+label {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: $fuente-primaria;
+    font-size: 18px;
+    padding: 10px 10px 20px 10px;
+}
+
+.parrafo-formulario {
+    text-align: left;
+    color: $blanco;
+    font-family: $fuente-primaria;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+textarea {
+    padding: 10px 10px 10px 10px;
+}

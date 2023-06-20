@@ -13,7 +13,7 @@ font-family: 'Ubuntu', sans-serif;*/
   grid-template-rows: 1fr 1fr 2fr 1fr;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
   height: 100vh;
-  background-image: url(../img/comida-ingredientes.jpg);
+  background-image: url(../img/comida-ingredientes.png);
   background-size: cover;
 }
 
@@ -154,13 +154,6 @@ h3 {
   font-style: italic;
 }
 
-#navbarNavAltMarkup {
-  justify-content: center;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bolder;
-  font-size: 16px;
-}
-
 .carousel-inner {
   padding: 5px 5px 5px 5px;
 }
@@ -265,6 +258,7 @@ h3 {
   font-size: 18px;
   text-decoration: dotted;
   font-weight: bold;
+  padding: 5px 5px 5px 5px;
 }
 
 .enlace-dos {
@@ -370,16 +364,27 @@ iframe {
   margin: auto;
 }
 
-footer {
-  grid-area: footer;
-  font-family: "Ubuntu", sans-serif;
+.btn {
+  background-color: rgb(255, 102, 51);
+  border-color: rgb(255, 102, 51);
+  margin-left: 70px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 102, 51);
+}
+
+.enlace-dos-home {
   color: rgb(255, 255, 255);
-  font-size: small;
-  font-weight: lighter;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  text-decoration: dotted;
+  font-weight: bold;
+}
+
+.enlace-dos-home:hover {
+  color: rgb(255, 102, 51);
 }
 
 @media only screen and (max-width: 576px) {
@@ -388,8 +393,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "header" "main" "footer";
-    background-image: url(../img/vista-superior-tazon-lentejas-variedad-condimentos.jpg);
-    background-attachment: fixed;
+    background-image: url(../img/vista-superior-tazon-lentejas-variedad-condimentos.png);
   }
   #ppal-pages-sobre-nosotros {
     display: grid;
@@ -399,22 +403,29 @@ footer {
     height: 100vh;
     background-image: url(../img/vista-superior-tazon-lentejas-dos.png);
     background-attachment: fixed;
+    opacity: 90%;
   }
   .titulo-home {
-    font-size: 60px;
-    padding-left: 900px;
-    padding-top: 120px;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-top: 200px;
     padding-bottom: 0px;
     justify-content: left;
     font-family: "Ubuntu", sans-serif;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: beige;
+  }
+  .subtitulo-home {
+    font-size: 15px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .btn-home {
     display: flex;
     justify-content: right;
     padding-right: 160px;
-    padding-top: 0px;
+    padding-top: 20px;
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
   }
@@ -433,7 +444,58 @@ footer {
   }
   .paragraph-two {
     flex-direction: column;
+    padding: 10px;
+    margin: 10px;
   }
+  footer {
+    padding-left: 10px;
+  }
+}
+#navbarNavAltMarkup {
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.formulario {
+  justify-content: center;
+  align-items: left;
+}
+
+label {
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  padding: 10px 10px 20px 10px;
+}
+
+.parrafo-formulario {
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+textarea {
+  padding: 10px 10px 10px 10px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  padding-bottom: 8px;
+  padding-left: 150px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enlace-footer {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
